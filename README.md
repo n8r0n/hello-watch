@@ -21,4 +21,6 @@ This project uses the App Group `group.com.mycompany.HelloWatch` to share data b
 
 The app should look like this on the Apple Watch
 
-[Apple Watch](http://i.imgur.com/ABylzuo.png?1).
+[![Apple Watch Screenshot][1]][1]
+
+  [1]: http://i.imgur.com/ABylzuo.png?1
