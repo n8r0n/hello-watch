@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IP address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJN-SJ-WK2">
+                                <rect key="frame" x="16" y="120" width="343" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="lQx-Rl-mma"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ie0-b5-Y5J">
+                                <rect key="frame" x="148" y="169" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="7uk-7a-SHY"/>
+                                </constraints>
+                                <state key="normal" title="Push Image"/>
+                                <connections>
+                                    <action selector="pushImageTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1BX-Le-cT2"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Xy-ca-nuv">
+                                <rect key="frame" x="68" y="207" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="API-3e-ABj"/>
+                                    <constraint firstAttribute="width" constant="240" id="uCn-6Q-gQ2"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8Xy-ca-nuv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0ca-Ix-soZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VJN-SJ-WK2" secondAttribute="trailing" id="9o8-RH-TS9"/>
+                            <constraint firstItem="VJN-SJ-WK2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="Z6p-ei-81i"/>
+                            <constraint firstItem="8Xy-ca-nuv" firstAttribute="top" secondItem="ie0-b5-Y5J" secondAttribute="bottom" constant="8" id="bvF-ar-GKt"/>
+                            <constraint firstItem="VJN-SJ-WK2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dxj-4C-fTA"/>
+                            <constraint firstItem="ie0-b5-Y5J" firstAttribute="top" secondItem="VJN-SJ-WK2" secondAttribute="bottom" constant="25" id="h0f-0p-I8w"/>
+                            <constraint firstItem="ie0-b5-Y5J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qzK-wr-5kp"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="ipAddress" destination="VJN-SJ-WK2" id="e0a-ZB-glZ"/>
+                        <outlet property="webcam" destination="8Xy-ca-nuv" id="fn6-cs-vEo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
