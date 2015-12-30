@@ -17,6 +17,13 @@ This project uses the App Group `group.com.mycompany.HelloWatch` to share data b
  7. When the image transfer succeeds, the watch app should display the new webcam image. Also, the log will show "Rx'd XXXXX bytes of image data" for the received image.
  8. During failed transfers, no message about "Rx'd XXXXXX bytes" will appear, and various other system logging will be generated in both the watch and phone simulator console logs.
 
+## Code
+
+The important source code can be found:
+
+ - [iPhone App ViewController](https://github.com/n8r0n/hello-watch/blob/master/HelloWatch/HelloWatch/ViewController.m)
+ - [Apple Watch Ext InterfaceController](https://github.com/n8r0n/hello-watch/blob/master/HelloWatch/HelloWatch%20WatchKit%20Extension/InterfaceController.m)
+  
 ## Screenshot
 
 The app should look like this on the Apple Watch
